@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <!--Menu Encabezado-->
+  <div class="contenedor-header">
+  <header>
+      <div class="logo">
+          <a href="#">Eugenio Muñoz</a>
+      </div>
+      <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+  </header>
+  </div>
+
+  <!--Seccion Inicio -->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+        <div class="contenedor-img">
+            <img src="img/perfil.png" alt="">
+        </div>
+        <h1>Eugenio Muñoz</h1>
+        <h2>Desarrollador de aplicaciones web</h2>
+        <div class="redes">
+            <a href="https://web.facebook.com/eugenio.m.flores.5" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://x.com/keno_mun" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kenomun/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/eugenio-mu%C3%B1oz-flores/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+  </section>
+
+  <!--Seccion Sobre mi -->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p><span>Hola, soy Eugenio Muñoz.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+      <div class="fila">
+        <!-- datos personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
+          <ul>
+            <li>
+              <strong>Fecha de nacimiento:</strong>
+              13-06-1981
+            </li>
+            <li>
+              <strong>Número de contacto</strong>
+              (+56)9 9657 9454
+            </li>
+            <li>
+              <strong>Email</strong>
+              eugenio.mun.f@gmail.com
+            </li>
+            <li>
+              <strong>Nacionalidad</strong>
+              Chilena
+            </li>
+            <li>
+              <strong>Cargo</strong>
+              <span>Desarrollador de aplicaciones web</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- intereses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+            </div>
+            <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>CINE</span>
+            </div>
+
+            <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>TECNOLOGIA</span>
+            </div>      
+          </div>
+        </div>
+      </div>
+  
+      <a href="download/CV.EugenioMuñoz .pdf" download="MiCV.pdf">
+        <button>
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+      </a>
+    
+    </div>
+  </section>
+
+  <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+										<div class="skill">
+											<span>Javascript</span>
+											<div class="barra-skill">
+													<div class="progreso">
+															<span>70%</span>
+													</div>
+											</div>
+										</div>
+										<div class="skill">
+											<span>Java</span>
+											<div class="barra-skill">
+													<div class="progreso">
+															<span>70%</span>
+													</div>
+											</div>
+										</div>
+										<div class="skill">
+											<span>Node</span>
+											<div class="barra-skill">
+													<div class="progreso">
+															<span>70%</span>
+													</div>
+											</div>
+										</div>
+										<div class="skill">
+											<span>Springboot</span>
+											<div class="barra-skill">
+													<div class="progreso">
+															<span>75%</span>
+													</div>
+											</div>
+										</div>
+										<div class="skill">
+											<span>Ruby on Rails</span>
+											<div class="barra-skill">
+													<div class="progreso">
+															<span>70%</span>
+													</div>
+											</div>
+										</div>
+										<div class="skill">
+											<span>Vue.js</span>
+											<div class="barra-skill">
+													<div class="progreso">
+															<span>70%</span>
+													</div>
+											</div>
+										</div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidadt</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+										<div class="skill">
+											<span>Empatia</span>
+											<div class="barra-skill">
+													<div class="progreso">
+															<span>80%</span>
+													</div>
+											</div>
+									</div>
+									<div class="skill">
+										<span>Liderazgo</span>
+										<div class="barra-skill">
+												<div class="progreso">
+														<span>80%</span>
+												</div>
+										</div>
+								</div>
+								<div class="skill">
+									<span>Etica profesional </span>
+									<div class="barra-skill">
+											<div class="progreso">
+													<span>94%</span>
+											</div>
+									</div>
+							</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- SECCION CURRICULUM -->
+	<section id="curriculum" class="curriculum">
+	<div class="contenido-seccion">
+			<h2>Curriculum</h2>
+			<div class="fila">
+					<div class="col izquierda">
+							<h3>Educación</h3>
+							<div class="item izq">
+									<h4>Programación y análisis de sistemas</h4>
+									<span class="casa">Instituto profesional AIEP</span>
+									<span class="fecha">2021 - 2022</span>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+									<div class="conectori">
+											<div class="circuloi"></div>
+									</div>
+							</div>
+							<h3>Otros cursos</h3>
+							<div class="item izq">
+									<h4>Desarrollo de aplicaciones full stack Javascript</h4>
+									<span class="casa">Talento digital</span>
+									<span class="fecha">2022</span>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+									<div class="conectori">
+											<div class="circuloi"></div>
+									</div>
+									<a href="https://www.credly.com/users/keno-mun/badges" target="_blank"">
+										<button>
+												Ver certificado <i class="fa-solid fa-arrow-right"></i>
+												<span class="overlay"></span>
+										</button>
+									</a>
+							</div>
+							<div class="item izq">
+									<h4>Desarrollo Ruby on Rail para
+										emprendimiento de tipo statup </h4>
+									<span class="casa">Talento digital</span>
+									<span class="fecha">2023</span>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+									<div class="conectori">
+											<div class="circuloi"></div>
+									</div>
+									<a href="https://www.acreditta.com/credential/ec654da1-5d93-4da8-a859-378a37ef9642" target="_blank"">
+										<button>
+												Ver certificado <i class="fa-solid fa-arrow-right"></i>
+												<span class="overlay"></span>
+										</button>
+									</a>
+							</div>
+					</div>
+
+					<div class="col derecha">
+							<h3>Experiencia laboral</h3>
+
+							<div class="item der">
+								<h4>Freelance</h4>
+								<span class="casa">F2G</span>
+								<span class="fecha">2023</span>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+								<div class="conectord">
+										<div class="circulod"></div>
+								</div>
+						</div>
+							
+							<div class="item der">
+									<h4>Desarrollador Full Stack aplicacion web</h4>
+									<span class="casa">Edutecnia</span>
+									<span class="fecha">2022 - 2023</span>
+									<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+									<div class="conectord">
+											<div class="circulod"></div>
+									</div>
+							</div>
+
+							<div class="item der">
+								<h4>Área Explotación</h4>
+								<span class="casa">SIISA.SA</span>
+								<span class="fecha">2009 - 2019</span>
+								<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+								<div class="conectord">
+										<div class="circulod"></div>
+								</div>
+						</div>
+						
+					</div>
+			</div>
+	</div>
+	</section>
+
+    <!-- SECCION PORTFOLIO -->
+	<section id="portfolio" class="portfolio">
+		<div class="contenido-seccion">
+			<h2>PORTFOLIO</h2>
+			<div class="galeria">
+				<a href="https://www.instagram.com/kenomun/" target="_blank" class="proyecto-link">
+					<div class="proyecto">
+							<img src="img/p1.jpg" alt="">
+							<div class="overlay">
+									<h3>Diseño Creativo</h3>
+									<p>Fotografía</p>
+							</div>
+					</div>
+				</a>
+				<a href="https://www.instagram.com/kenomun/" target="_blank" class="proyecto-link">
+					<div class="proyecto">
+						<img src="img/p2.jpg" alt="">
+						<div class="overlay">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</div>
+					</div>
+				</a>
+				<a href="https://www.instagram.com/kenomun/" target="_blank" class="proyecto-link">
+					<div class="proyecto">
+						<img src="img/p3.jpg" alt="">
+						<div class="overlay">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</div>
+					</div>
+				</a>
+				<a href="https://www.instagram.com/kenomun/" target="_blank" class="proyecto-link">
+					<div class="proyecto">
+						<img src="img/p4.jpg" alt="">
+						<div class="overlay">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</div>
+					</div>
+				</a>
+				<a href="https://www.instagram.com/kenomun/" target="_blank" class="proyecto-link">
+					<div class="proyecto">
+						<img src="img/p5.jpg" alt="">
+						<div class="overlay">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</div>
+					</div>
+				</a>
+				<a href="https://www.instagram.com/kenomun/" target="_blank" class="proyecto-link">
+					<div class="proyecto">
+						<img src="img/p6.jpg" alt="">
+						<div class="overlay">
+							<h3>Diseño Creativo</h3>
+							<p>Fotografía</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+    <!-- SECCION CONTACTO -->
+	<section id="contacto" class="contacto">
+		<div class="contenido-seccion">
+			<h2>CONTACTO</h2>
+			<div class="fila">
+				<!-- Formulario -->
+				<div class="col">
+					<form id="form">
+						<div class="field">
+							<input type="text" name="name" id="name" placeholder="Nombre">
+						</div>
+						
+						<div class="field">
+							<input type="text" name="email" id="email" placeholder="Email">
+						</div>
+						
+						<div class="field">
+							<input type="text" name="message" id="message" placeholder="Mensaje">
+						</div>
+						
+						<button type="submit" id="button" value="Send Email">
+							Send Email <i class="fa-solid fa-paper-plane"></i>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+			<a href="#inicio" class="arriba">
+					<i class="fa-solid fa-angles-up"></i>
+			</a>
+			<div class="redes">
+				<a href="https://web.facebook.com/eugenio.m.flores.5" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="https://x.com/keno_mun" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://www.instagram.com/kenomun/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/eugenio-mu%C3%B1oz-flores/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+	<script type="text/javascript">
+  emailjs.init('M6esGyWIgmm-fMFJ8')
+	</script>
+  <script src="../javascript/script.js"></script>
+	<script src="../javascript/scriptEmail.js"></script>
+</body>
+</html>
