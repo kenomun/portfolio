@@ -4,17 +4,17 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.innerHTML  = 'Enviando mensaje...';
+   btn.value = 'Sending...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_2ikq2ss';
+   const templateID = 'template_5pe1ljg';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Enviando mensaje';
-      alert('Mensaje enviado');
+      btn.value = 'Send Email';
+      alert('Sent!');
     }, (err) => {
-      btn.value = 'Enviando mensaje';
+      btn.value = 'Send Email';
       alert(JSON.stringify(err));
     });
 });
