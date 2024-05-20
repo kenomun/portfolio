@@ -34,6 +34,29 @@
     color: #fff;
     font-size: 18px;
 }
+
+.message-container {
+    position: relative; /* Establece una posición relativa para que los mensajes se posicionen con respecto a este contenedor */
+    width: 100%; /* O ajusta el ancho según sea necesario */
+}
+
+.contacto .successMessage {
+    display: none; 
+    color: green; 
+    text-align: center;
+     position: absolute; 
+     top: 50%; left: 50%; 
+     transform: translate(-50%, -50%);
+}
+
+.contacto .errorMessage {
+    display: none; 
+    color: red; 
+    text-align: center; 
+    position: absolute; 
+    align-items: center;
+}
+
 .contacto button{
     cursor: pointer;
     background-color: transparent;

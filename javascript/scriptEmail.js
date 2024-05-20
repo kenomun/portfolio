@@ -4,17 +4,35 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Sending...';
+   btn.innerHTML = 'Enviando mensaje...';
 
    const serviceID = 'default_service';
-   const templateID = 'template_5pe1ljg';
+   const templateID = 'template_5pe1lj';
 
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
-      alert('Sent!');
+      alert('Mensaje enviado');
+      btn.innerHTML = 'Enviar mensaje <i class="fa-solid fa-paper-plane"></i>';
+      successMessage.innerText = 'Mensaje enviado con éxito'; // Muestra el mensaje de éxito
+      successMessage.style.display = 'block'; // Muestra el mensaje de éxito
+      successMessage.style.color = 'green'; // Establece el color verde para el mensaje de éxito
+
+      document.getElementById('form').reset();
+      // Oculta el mensaje de éxito después de 5 segundos
+      setTimeout(function() {
+        successMessage.style.display = 'none';
+      }, 5000);
     }, (err) => {
-      btn.value = 'Send Email';
       alert(JSON.stringify(err));
+      btn.innerHTML = 'Enviar mensaje <i class="fa-solid fa-paper-plane"></i>';
+      errorMessage.innerText = 'No se pudo enviar el mensaje debido a un error del servidor'; // Muestra el mensaje de error
+      errorMessage.style.display = 'block'; // Muestra el mensaje de error
+      errorMessage.style.color = 'red';
+ 
+      // Oculta el mensaje de error después de 5 segundos
+      setTimeout(function() {
+        errorMessage.style.display = 'none';
+      }, 5000);
+
     });
 });
