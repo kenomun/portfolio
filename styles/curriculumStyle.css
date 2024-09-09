@@ -146,3 +146,16 @@
 
 
 }
+
+.two-columns {
+    margin-top: 5px !important;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    list-style:circle;
+    padding: 0;
+}
+
+.two-columns li {
+    margin-bottom: 5px;
+}
