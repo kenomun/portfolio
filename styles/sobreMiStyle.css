@@ -116,3 +116,8 @@
         width: fit-content;
     }
 }
+
+.justify-text {
+    text-align: justify;
+    margin: 0 auto;
+}
